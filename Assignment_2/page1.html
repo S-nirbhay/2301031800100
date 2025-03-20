@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Lifestyle Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+        /* Set font for the whole page */
+        body {
+            font-family: 'Special Elite', cursive;
+        }
+
+        /* Background image settings */
+        body {
+            background-image: url('https://i.pinimg.com/736x/4e/f4/23/4ef423dcf542a5b07da41810d5fcf57b.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-center {
+            width: 90%; /* Full width */
+            text-align: center;
+            background: rgba(51, 51, 51, 0.44); /* Slight dark overlay */
+            padding: 150px; /* Adjust padding for better spacing */
+            border-radius: 10px;
+        }
+
+
+        /* Logo image */
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            padding: 10px;
+            display: block;
+            margin: 0 auto 15px;
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 1s forwards; /* Fade-in effect */
+        }
+
+        /* Heading */
+        h1 {
+            font-size: 5vw !important; /* Large text */
+            color: white;
+            margin-bottom: 20px;
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 1.5s forwards 0.5s; /* Delayed fade-in */
+        }
+
+        /* Button styling */
+        .btn {
+            font-size: 18px; /* Medium-large text */
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: white;
+            color: black;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <img alt="Eco-friendly house icon" class="logo" src="https://i.pinimg.com/736x/11/e3/96/11e396cd9a3f868ba65ae0bc985f8c34.jpg"/>
+        <h1>Eco-Friendly Lifestyle Hub</h1>
+        <button class="btn">Get Started</button>
+    </div>
+</body>
+</html>
