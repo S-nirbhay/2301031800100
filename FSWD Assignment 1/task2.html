@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Junoon 2026 | Annual Cultural Fest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-black/40 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">Junoon'26 @ SOU</h1>
+        <div class="space-x-6 hidden md:flex">
+            <a href="#about" class="hover:text-pink-400">About</a>
+            <a href="#events" class="hover:text-pink-400">Events</a>
+            <a href="#schedule" class="hover:text-pink-400">Schedule</a>
+            <a href="#contact" class="hover:text-pink-400">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="h-screen flex items-center justify-center text-center bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-700 px-6">
+    <div>
+        <h2 class="text-5xl md:text-7xl font-bold mb-6">
+            Junoon 2026
+        </h2>
+        <p class="text-xl md:text-2xl mb-8">
+            The Annual Cultural Fest Celebrating Passion, Talent & Creativity
+        </p>
+        <a href="#events"
+           class="px-8 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition">
+           Explore Events
+        </a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-gray-900 text-center">
+    <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-pink-400">About Junoon</h3>
+        <p class="text-gray-300 leading-relaxed">
+            Junoon 2026 is the university’s grand annual cultural fest that brings together creativity, energy, and talent from across campuses. It serves as a vibrant platform where students express themselves through music, dance, fashion, and various artistic performances. The fest encourages healthy competition while fostering teamwork, confidence, and innovation. With electrifying performances, enthusiastic participation, and an unforgettable atmosphere, Junoon celebrates the true spirit of youth and passion. It is not just an event, but an experience that creates lasting memories and inspires emerging talent.
+        </p>
+    </div>
+</section>
+
+<!-- Events Section -->
+<section id="events" class="py-20 px-6 bg-gray-800">
+    <h3 class="text-3xl font-bold text-center mb-12 text-purple-400">Event Highlights</h3>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+        <!-- Singing -->
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition">
+            <h4 class="text-2xl font-semibold mb-4 text-pink-400">Singing</h4>
+            <p class="text-gray-300">
+                Solo performances, duets, and band competitions featuring all genres
+                of music from classical to contemporary.
+            </p>
+        </div>
+
+        <!-- Dance -->
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition">
+            <h4 class="text-2xl font-semibold mb-4 text-purple-400">Dance</h4>
+            <p class="text-gray-300">
+                Showcase your moves in solo, group, and freestyle dance competitions
+                across multiple styles.
+            </p>
+        </div>
+
+        <!-- Fashion Show -->
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg hover:scale-105 transition">
+            <h4 class="text-2xl font-semibold mb-4 text-indigo-400">Fashion Show</h4>
+            <p class="text-gray-300">
+                Walk the ramp with confidence and creativity in our glamorous
+                themed fashion show competition.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Schedule Section -->
+<section id="schedule" class="py-20 px-6 bg-gray-900">
+    <h3 class="text-3xl font-bold text-center mb-12 text-pink-400">Event Schedule</h3>
+
+    <div class="max-w-4xl mx-auto space-y-6">
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h4 class="text-xl font-semibold">Day 1 - Singing Competition</h4>
+            <p class="text-gray-400">10:00 AM – 4:00 PM | Aryabhatt Auditorium</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h4 class="text-xl font-semibold">Day 2 - Dance Battle</h4>
+            <p class="text-gray-400">11:00 AM – 5:00 PM | Aryabhatt Auditorium</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h4 class="text-xl font-semibold">Day 3 - Grand Fashion Show</h4>
+            <p class="text-gray-400">6:00 PM – 9:00 PM | Aryabhatt Auditorium</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Registration Section -->
+<section id="register" class="py-20 px-6 bg-gray-900 text-white text-center">
+    
+    <h3 class="text-3xl font-bold mb-6 text-pink-400">
+        Register for Junoon 2026
+    </h3>
+
+    <p class="text-gray-400 mb-10">
+        Fill in your details to participate in the cultural fest.
+    </p>
+
+    <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-lg">
+
+        <form onsubmit="showMessage(event)" class="space-y-6 text-left">
+
+            <!-- Name -->
+            <div>
+                <label class="block mb-2 text-sm text-gray-300">Full Name</label>
+                <input type="text" required
+                       class="w-full px-4 py-2 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label class="block mb-2 text-sm text-gray-300">Email Address</label>
+                <input type="email" required
+                       class="w-full px-4 py-2 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            </div>
+
+            <!-- Event Selection -->
+            <div>
+                <label class="block mb-2 text-sm text-gray-300">Select Event</label>
+                <select required
+                        class="w-full px-4 py-2 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <option value="">Choose an event</option>
+                    <option>Singing</option>
+                    <option>Dance</option>
+                    <option>Fashion Show</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit"
+                        class="px-8 py-3 bg-pink-600 rounded-full hover:bg-pink-700 transition shadow-lg">
+                    Submit Registration
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Success Message -->
+        <p id="successMessage" class="text-green-400 mt-6 hidden text-center font-semibold">
+            🎉 Registration Successful! See you at Junoon 2026!
+        </p>
+
+    </div>
+</section>
+
+<!-- Simple Frontend Script -->
+<script>
+function showMessage(event) {
+    event.preventDefault();
+    document.getElementById("successMessage").classList.remove("hidden");
+}
+</script>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-gray-900 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-purple-400">
+        Contact Us
+    </h3>
+
+    <p class="text-gray-400 mb-8">
+        For queries, participation details, or sponsorship opportunities, reach out to the Junoon 2026 organizing team.
+    </p>
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2301031800100@silveroakuni.ac.in"
+   target="_blank"
+   class="px-6 py-3 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition duration-300">
+   Email Organizers
+</a>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="py-6 text-center bg-black text-gray-500">
+    © 2026 Junoon | Annual Cultural Fest
+</footer>
+
+</body>
+</html>
